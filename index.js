@@ -1,4 +1,3 @@
-console.log('ué')
 
 function generateItems(qtd = 10000000) {
     const elements = [];
@@ -59,7 +58,7 @@ window.addEventListener('load', () => {
             elementsToRerendedr += elements[i];
         }
 
-        console.log({firstElementAtScreen, firstElementToRender, lastElementToRender})
+        // console.log({firstElementAtScreen, firstElementToRender, lastElementToRender})
 
         div.innerHTML = elementsToRerendedr;
         document.getElementById(`element-${firstElementToRender}`).style.paddingTop = `${firstElementToRender * childHeight}px`;
